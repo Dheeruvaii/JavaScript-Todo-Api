@@ -30,7 +30,12 @@ import "./App.css";
 import ImgComponent from "./components/ImgComponent";
 
 function App() {
-  const styles = { height: "150px", width: "100px", backgroundColor: "black" , marginLeft:"900px"};
+  const styles = {
+    height: "100px",
+    width: "100px",
+    backgroundColor: "green",
+    // marginLeft: "900px",
+  };
   return (
     <div className="App" style={{ backgroundColor: "violet " }}>
       <ImgComponent img={logo} times={10} css={styles} />

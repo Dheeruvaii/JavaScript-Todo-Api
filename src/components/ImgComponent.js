@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../assets/logo192.png";
 
 const ImgComponent = ({ img, times, css }) => {
-  const id = '';
+  const id = 8;
   const loopArray = Array.from({ length: times }, (_, index) => index + 1);
 
   return (
@@ -12,19 +12,13 @@ const ImgComponent = ({ img, times, css }) => {
           return (
             <div
               key={item}
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                ...css,
-              }}
+
             >
-              {item}
+              {/* {item} */}
               <img
                 src={img || logo}
                 style={{
-                  height: "100px",
-                  width: "100px",
+                ...css
                 }}
                 alt="Logo"
               />
